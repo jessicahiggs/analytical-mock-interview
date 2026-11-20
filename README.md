@@ -1,75 +1,60 @@
-# Analytical Mock Interview Partner
+# Analytical Case Walkthrough
 
 Written by [jessicahiggs](https://github.com/jessicahiggs).
 
-A Claude skill that runs a live, timed mock **analytical interview** — the metrics round used for
-PM roles at most top tech companies. Different companies call it execution, product analysis, or
-analytical thinking, but it's the same question: *how would you measure success of this product?*
+A Claude skill that walks you step by step through answering an **analytical case** — the metrics
+round used for PM roles at most top tech companies. Different companies call it execution,
+product analysis, or analytical thinking, but it's the same question: *how would you measure
+success of this product?*
 
-Claude plays a realistic interviewer: it presents a case, makes you define every bar, and
-challenges your North Star against its runner-up — without spoon-feeding you the structure. It
-tracks real elapsed time per section against target pacing, and closes with detailed narrative
-feedback (no scores or grades — just specific, quotable critique).
+Claude takes you through the case one step at a time. It says what each step needs, lets you
+answer it, then checks your answer and tells you what's missing before moving on. The metrics
+table builds up in front of you as you go, and at the end you get the finished case back in one
+piece.
 
 ## What it looks like
 
-You bring a case (or ask for one), and Claude runs the session as a real interviewer would —
-probing, pushing back, and holding you to your choices. A short excerpt (illustrative):
+A short excerpt (illustrative):
 
 ```text
-Interviewer: Let's do a case. "How would you measure the success of a
-podcast feature inside a video streaming app?" Before any numbers — what
-is this product for?
+Claude: Next: who's in the ecosystem? Name everyone, including the
+parties you won't end up measuring. Then tell me whether both sides are
+groups of people, or whether one side is a system or a platform.
 
-You: It's there to grow engagement and give people a reason to open the
-app more often.
+You: Listeners and podcasters. Advertisers and Netflix itself are in
+there too, but I wouldn't measure them.
 
-Interviewer: That's the goal of every feature. Is this product new or
-mature? Because that changes what you'd measure first.
+Claude: Good — naming the ones you're not measuring is the part most
+people skip. Both sides are people, so both columns get filled.
 
-You: New — so I'd lead with adoption rather than depth of engagement.
+Now adoption. This is a count: the number of people on each side who do
+the core action at least once per period. Give me both sides, and tell
+me why you picked the period you picked.
 
-Interviewer: Good. Who are we measuring?
+You: Number of people who listen to at least one episode a week, and
+number of podcasters who publish at least one episode a week.
 
-You: Listeners, and the creators publishing the shows.
+Claude: Both sides, both counts. Why weekly?
 
-Interviewer: You've given me a two-sided ecosystem. Are you measuring both,
-or scoping to one?
+You: Episodes mostly drop weekly, so that's the natural cycle for
+someone to come back.
 
-You: I'd scope to listeners, but I'd still watch creator retention — if
-publishers churn, the catalog thins out and listener metrics follow.
-
-Interviewer: Fine. Give me your engagement metric.
+Claude: That's the justification I wanted. On to engagement — and this
+is where it gets harder, because you need more than one per side.
 
 You: Weekly active listeners.
 
-Interviewer: That's an adoption metric wearing a different hat. What does
-a user have to actually do for you to call them engaged?
+Claude: That's a group of people, not a metric. A metric is a count or
+a percentage of people doing something specific. Try again: what does
+a listener have to actually do for you to call them engaged?
 
-  ... [case continues through the metrics table, the North Star,
-      and counter-metrics] ...
+  ... [continues through the full table, the North Star,
+      prioritization, and counter-metrics] ...
 ```
 
-When the case ends, it drops the interviewer persona and gives you an honest read:
-
-```text
-Pacing — that took about 29 minutes.
-
-Where it was strong — you caught the new-vs-mature distinction unprompted
-and let it shape which metrics you led with. You also volunteered what
-you'd watch on the side you weren't measuring, which most candidates skip.
-
-Where it was thin — your metrics didn't trace back to the user value you
-established earlier. You listed what's conventional rather than deriving
-it from what listeners actually do, which is why "weekly active listeners"
-came out with no bar attached.
-
-Highest-leverage fix — your counter-metric was a generic guardrail. Name
-the mechanism: how specifically would your North Star rise while the
-product got worse? Answer that and the counter-metric writes itself.
-```
-
-No scores or grades — just specific, quotable feedback tied to what you actually said.
+At the end it prints the finished case back in one piece — purpose, ecosystem, the completed
+table, the North Star and its justification, the three prioritized metrics, and the
+counter-metrics — plus a short read on how your reasoning went. No scores or grades.
 
 ## What this skill is not for
 
@@ -85,14 +70,11 @@ No scores or grades — just specific, quotable feedback tied to what you actual
 your skills directory (or install the packaged `.skill` file if you have one), then in a
 conversation just say something like:
 
-> Mock interview me on this: "How would you measure the success of YouTube Shorts?"
+> Walk me through this: "How would you measure the success of YouTube Shorts?"
 
-**No case handy?** Ask Claude to give you one — it'll generate a realistic case from a real
-company and product area. You can also aim it: name a company, product area, or seniority
-("a staff-level case for a fintech app") and it'll tailor the prompt to what you're preparing for.
-
-**How long it takes:** a full case runs about 25–40 minutes, plus a couple of minutes of feedback
-at the end — close to a real interview round, so you can practice under realistic pacing.
+**No case handy?** Ask Claude for one — it'll generate a realistic case from a real company and
+product area. You can also aim it: name a company, product area, or seniority ("a staff-level
+case for a fintech app") and it'll tailor the prompt to what you're preparing for.
 
 ## License
 
