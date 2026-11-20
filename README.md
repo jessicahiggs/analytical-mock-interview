@@ -17,19 +17,26 @@ piece.
 A short excerpt (illustrative):
 
 ```text
-Claude: Next: who's in the ecosystem? Name everyone, including the
-parties you won't end up measuring. Then tell me whether both sides are
-groups of people, or whether one side is a system or a platform.
+Claude: Next: who's in the ecosystem? And tell me whether both sides
+are groups of people, or whether one side is a system or a platform.
 
-You: Listeners and podcasters. Advertisers and Netflix itself are in
-there too, but I wouldn't measure them.
+You: Listeners and podcasters. Both are people.
 
-Claude: Good — naming the ones you're not measuring is the part most
-people skip. Both sides are people, so both columns get filled.
+Claude: Good — so both columns get filled later.
+
+Before any metrics, define what success looks like for each side. What
+does each one actually do, and what do they get out of it?
+
+You: Podcasters record and publish episodes, build a following so people
+don't miss the next one, and eventually land sponsors. Listeners find
+shows that match their interests, save them for later, listen, and share
+episodes with friends.
+
+Claude: Hold onto that list — the metrics come straight out of it.
 
 Now adoption. This is a count: the number of people on each side who do
-the core action at least once per period. Give me both sides, and tell
-me why you picked the period you picked.
+the core action at least once per period. Both sides, and tell me why
+you picked the period you picked.
 
 You: Number of people who listen to at least one episode a week, and
 number of podcasters who publish at least one episode a week.
@@ -45,8 +52,8 @@ is where it gets harder, because you need more than one per side.
 You: Weekly active listeners.
 
 Claude: That's a group of people, not a metric. A metric is a count or
-a percentage of people doing something specific. Try again: what does
-a listener have to actually do for you to call them engaged?
+a percentage of people doing something specific. What does a listener
+have to actually do for you to call them engaged?
 
   ... [continues through the full table, the North Star,
       prioritization, and counter-metrics] ...
