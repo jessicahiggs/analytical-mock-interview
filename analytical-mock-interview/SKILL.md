@@ -46,8 +46,8 @@ it's new or mature. *Check:* did they actually decide new vs. mature? It determi
 lead with adoption or engagement, and it should visibly shape step 4.
 
 **2. Who** — identify both sides of the ecosystem, then confirm the shape: are both sides groups
-of users, or is one side a system or platform? *Check:* they must name the full ecosystem, even
-the parties they won't measure. Naming one side only is the most common miss here.
+of people, or is one side a system or platform? *Check:* naming one side only is the most common
+miss here. Don't make them list parties they aren't going to measure.
 
 **3. Define success for each side** — the actions each side takes, and the value each action
 delivers. *Check:* **no metrics yet.** If they start naming metrics, pull them back. This list is
