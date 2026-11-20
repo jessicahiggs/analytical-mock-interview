@@ -28,7 +28,7 @@ in step 4, so it has to be made explicitly, not skipped.
 
 Identify the ecosystem, then classify its shape.
 
-- Name **both sides of the ecosystem**, including parties that won't be measured.
+- Identify **both sides of the ecosystem**.
 - Confirm the shape: **are both sides groups of people, or is one side a system or platform?**
 - Shapes you'll see:
   - **Two groups of people** — marketplace, creator/consumer, buyer/seller
@@ -37,8 +37,8 @@ Identify the ecosystem, then classify its shape.
   - **People + a third party** — advertisers, developers. That side pays or builds rather than
     consumes
 
-**Check:** naming only one side is the most common miss. Both sides get measured in step 4 by
-default — identifying the ecosystem is not the same as scoping down to one part of it.
+**Check:** naming only one side is the most common miss. Both sides get measured by default,
+and the next step defines success for each of them.
 
 ---
 
