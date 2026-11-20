@@ -1,28 +1,28 @@
-# Analytical Mock Interview Partner
+# Analytical Case Walkthrough
 
 Written by Jessica Higgs.
 
-A Claude skill that runs a live, timed mock **analytical interview** — the metrics round used for
-PM roles at most top tech companies. Different companies call it execution, product analysis, or
-analytical thinking, but it's the same question: *how would you measure success of this product?*
+A Claude skill that walks you step by step through answering an **analytical case** — the metrics
+round used for PM roles at most top tech companies. Different companies call it execution,
+product analysis, or analytical thinking, but it's the same question: *how would you measure
+success of this product?*
 
 It's good preparation for big tech PM loops, where the analytical round is a standard part of the
 process.
 
-Claude plays a realistic interviewer: it presents a case, asks probing questions, makes you
-define every bar, and challenges your North Star against its runner-up. You bring your own
-approach — the skill doesn't hand you a structure, the same way a real interview doesn't.
+Claude takes you through the case one step at a time. It says what each step needs, lets you
+answer it, then checks your answer and tells you what's missing before moving on. The metrics
+table builds up in front of you as you go, and at the end you get the finished case back in one
+piece.
 
-It tracks real elapsed time against target pacing and closes with narrative feedback: what you
-actually said, where it was thin, and the single highest-leverage thing to fix next time. No
-scores, no grades.
+## What it holds you to
 
-## What it tests
-
-- Whether your metrics trace back to real user value, or were named off a generic list
-- Whether you defined the bar for every metric you proposed
-- Whether your North Star works for the whole ecosystem, not just one side
-- Whether your counter-metrics name a real mechanism, not a generic guardrail
+- A group of people is not a metric — a metric is a count or percentage of people doing something
+- Adoption is a number, and you have to justify the cadence you picked
+- Every engagement metric needs a defined bar, and one metric per side isn't enough
+- Both sides of the ecosystem get measured, not just the obvious one
+- Your North Star has to work for everyone in the ecosystem, not one side
+- Counter-metrics name a real mechanism, not a generic guardrail
 
 ## What this skill is not for
 
@@ -37,10 +37,10 @@ scores, no grades.
 your skills directory (or install the packaged `.skill` file if you have one), then in a
 conversation just say something like:
 
-> Mock interview me on this: "How would you measure the success of YouTube Shorts?"
+> Walk me through this: "How would you measure the success of YouTube Shorts?"
 
-**No case handy?** Ask Claude to give you one — it'll generate a realistic case from a real
-company and product area.
+**No case handy?** Ask Claude for one — it'll generate a realistic case from a real company and
+product area.
 
 ## License
 
